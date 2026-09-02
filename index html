@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My World’s Best Girlfriend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Video -->
+  <video id="bgVideo" autoplay muted loop playsinline>
+    <source src="background.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <!-- PAGE 1 -->
+  <section class="page active" id="page1">
+    <div class="content">
+      <p class="small-text">A little story made only for you baby ...</p>
+      <h1>For The Girl<br>Who Means The World To Me</h1>
+      <p class="subtitle">Every page has something I want you to know.</p>
+      <button onclick="nextPage()">Begin Our Story</button>
+    </div>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="page" id="page2">
+    <div class="content">
+      <h2>Before Everything...</h2>
+      <p>
+        There was a little seed waiting for the right place to grow.
+      </p>
+
+      <div class="seed">🌱</div>
+
+      <p class="message">
+        Just like this seed, trust takes time to grow.
+      </p>
+
+      <button onclick="nextPage()">Let It Grow</button>
+    </div>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="page" id="page3">
+    <div class="content">
+      <h2>And Then...</h2>
+
+      <div class="tree">
+        <div class="trunk"></div>
+        <div class="heart h1">♥</div>
+        <div class="heart h2">♥</div>
+        <div class="heart h3">♥</div>
+        <div class="heart h4">♥</div>
+        <div class="heart h5">♥</div>
+        <div class="heart h6">♥</div>
+        <div class="heart h7">♥</div>
+      </div>
+
+      <p>
+        Something beautiful started growing.
+      </p>
+
+      <button onclick="nextPage()">Continue</button>
+    </div>
+  </section>
+
+  <!-- PAGE 4 -->
+  <section class="page" id="page4">
+    <div class="content">
+      <h2>One Thing I Want To Say</h2>
+
+      <div class="letter">
+        <p id="typingText"></p>
+      </div>
+
+      <button onclick="nextPage()">Read More</button>
+    </div>
+  </section>
+
+  <!-- PAGE 5 -->
+  <section class="page" id="page5">
+    <div class="content">
+      <h2>I'm Sorry</h2>
+
+      <p class="big-heart">♥</p>
+
+      <p>
+        I believed the prank for a moment.
+        But that does not mean I don't trust you.
+      </p>
+
+      <p>
+        You are someone I value deeply,
+        and I never want one misunderstanding
+        to make you feel otherwise.
+      </p>
+
+      <button onclick="nextPage()">Next</button>
+    </div>
+  </section>
+
+  <!-- PAGE 6 -->
+  <section class="page" id="page6">
+    <div class="content">
+      <h2>What I Really Think About You</h2>
+
+      <div class="quote-box">
+        <p>“You are one of the most important people in my life.”</p>
+      </div>
+
+      <div class="quote-box">
+        <p>“Your loyalty means more to me than I can explain.”</p>
+      </div>
+
+      <div class="quote-box">
+        <p>“I choose to believe in you.”</p>
+      </div>
+
+      <button onclick="nextPage()">Next Page</button>
+    </div>
+  </section>
+
+  <!-- PAGE 7 -->
+  <section class="page" id="page7">
+    <div class="content">
+      <h2>Our Little Promise</h2>
+
+      <div class="promise-card">
+        <p>
+          I promise to communicate,
+          understand,
+          and never let one silly moment
+          define what I feel about you.
+        </p>
+      </div>
+
+      <button onclick="nextPage()">I Promise</button>
+    </div>
+  </section>
+
+  <!-- PAGE 8 -->
+  <section class="page" id="page8">
+    <div class="content">
+      <h2>Do You Remember?</h2>
+
+      <div class="memory">
+        <div class="memory-heart">♥</div>
+        <p>
+          Every laugh, every conversation,
+          every little memory matters.
+        </p>
+      </div>
+
+      <button onclick="nextPage()">Keep Going</button>
+    </div>
+  </section>
+
+  <!-- PAGE 9 -->
+  <section class="page" id="page9">
+    <div class="content">
+      <h2>There Is Something Waiting...</h2>
+
+      <div class="curtain-wrapper" onclick="openCurtain()">
+        <div class="curtain left"></div>
+        <div class="curtain right"></div>
+
+        <div class="curtain-text">
+          TOUCH TO OPEN
+        </div>
+      </div>
+
+      <p id="curtainMessage">
+        Open the curtain.
+      </p>
+    </div>
+  </section>
+
+  <!-- PAGE 10 -->
+  <section class="page" id="page10">
+    <div class="content award-page">
+
+      <p class="award-small">OFFICIALLY PRESENTED TO</p>
+
+      <h1 class="award-title">
+        WORLD'S BEST<br>
+        GIRLFRIEND
+      </h1>
+
+      <div class="award-medal">
+        ★
+      </div>
+
+      <h2 class="loyal-title">
+        THE LOYALTY AWARD
+      </h2>
+
+      <p>
+        For being an irreplaceable,
+        caring and loyal person.
+      </p>
+
+      <div class="stamp" id="stamp">
+        VALIDATED
+      </div>
+
+      <button onclick="giveAward()">Accept Award</button>
+
+      <p id="awardMessage"></p>
+
+    </div>
+  </section>
+
+  <!-- FINAL PAGE -->
+  <section class="page" id="page11">
+    <div class="content final-page">
+
+      <div class="floating-hearts">
+        ♥ ♥ ♥ ♥ ♥
+      </div>
+
+      <h1>
+        You Are<br>
+        Truly Special
+      </h1>
+
+      <p>
+        No prank, misunderstanding,
+        or bad moment can erase
+        the good memories we have.
+      </p>
+
+      <p class="final-line">
+        Thank you for being you.
+      </p>
+
+      <div class="final-heart">♥</div>
+
+      <button onclick="restartStory()">Replay Our Story</button>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
